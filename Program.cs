@@ -1,87 +1,70 @@
-﻿//listy:
-List<string> dayOfWeeks4 = new List<string>();
-dayOfWeeks4.Add("poniedziałek");
-dayOfWeeks4.Add("wtorek");
-dayOfWeeks4.Add("środa");
-dayOfWeeks4.Add("czwarterk");
-dayOfWeeks4.Add("piątek");
-dayOfWeeks4.Add("sobota");
-dayOfWeeks4.Add("niedziela");
-for (var i = 0; i < dayOfWeeks4.Count; i++)
+﻿int number = 1234567890;
+string numberAsString = number.ToString();
+char[] letters = numberAsString.ToArray();
+
+int counter0 = 0;
+int counter1 = 0;
+int counter2 = 0;
+int counter3 = 0;
+int counter4 = 0;
+int counter5 = 0;
+int counter6 = 0;
+int counter7 = 0;
+int counter8 = 0;
+int counter9 = 0;
+
+foreach (char letter in letters)
 {
-    Console.WriteLine(dayOfWeeks4[i]);
+    if(letter == '0')
+    { 
+        counter0++;
+    }
+    else if (letter == '1')
+    {
+        counter1++;
+    }
+    else if (letter == '2')
+    {
+        counter2++;
+    }
+    else if (letter == '3')
+    {
+        counter3++;
+    }
+    else if (letter == '4')
+    {
+        counter4++;
+    }
+    else if (letter == '5')
+    {
+        counter5++;
+    }
+    else if (letter == '6')
+    {
+        counter6++;
+    }
+    else if (letter == '7')
+    {
+        counter7++;
+    }
+    else if (letter == '8')
+    {
+        counter8++;
+    }
+    else if (letter == '9')
+    {
+        counter9++;
+    }
+
 }
-
-
-//tablice
-string[] mounth = new string[12];
-mounth[0] = "styczeń";
-mounth[1] = "luty";
-mounth[2] = "marzec";
-mounth[3] = "kwiecien";
-mounth[4] = "maj";
-mounth[5] = "czerwiec";
-mounth[6] = "lipiec";
-mounth[7] = "sierpien";
-mounth[8] = "wrzesien";
-mounth[9] = "pażdziernik";
-mounth[10] = "listopad";
-mounth[11] = "grudzień";
-
-for (var i = 0; i < mounth.Length; i++)
-{
-    Console.WriteLine(mounth[i]);
-}
-
-
-//listy:
-List<string> coulors = new List<string>();
-coulors.Add("black");
-coulors.Add("blue");
-coulors.Add("green");
-coulors.Add("yelow");
-coulors.Add("red");
-coulors.Add("vaylet");
-coulors.Add("braun");
-coulors.Add("orange");
-coulors.Add("gold");
-coulors.Add("silver");
-coulors.Add("pink");
-coulors.Add("white");
-
-Console.WriteLine(coulors[0]);
-
-for (var i = 0; i < coulors.Count; i = i + 1)
-{
-    Console.WriteLine(coulors[i]);
-}
-
-
-
-foreach (var nic in coulors)
-{
-    Console.WriteLine(nic);
-}
-
-string[] mounthh = new string[12];
-mounthh[0] = "styczeń";
-mounthh[1] = "luty";
-mounthh[2] = "marzec";
-mounthh[3] = "kwiecien";
-mounthh[4] = "maj";
-mounthh[5] = "czerwiec";
-mounthh[6] = "lipiec";
-mounthh[7] = "sierpien";
-mounthh[8] = "wrzesien";
-mounthh[9] = "pażdziernik";
-mounthh[10] = "listopad";
-mounthh[11] = "grudzień";
-
-foreach (var mount in mounthh)
-{
-    Console.WriteLine(mount);
-}
-
-
-
-return 0;
+Console.WriteLine(number);
+Console.WriteLine(" 0\t" + counter0);
+Console.WriteLine(" 1\t" + counter1);
+Console.WriteLine(" 2\t" + counter2);
+Console.WriteLine(" 3\t" + counter3);
+Console.WriteLine(" 4\t" + counter4);
+Console.WriteLine(" 5\t" + counter5);
+Console.WriteLine(" 6\t" + counter6);
+Console.WriteLine(" 7\t" + counter7);
+Console.WriteLine(" 8\t" + counter8);
+Console.WriteLine(" 9\t" + counter9);
